@@ -1,6 +1,6 @@
 <?php
 
-$token = '1092997171:AAF-VJTKJibNxmgvdGFd5VSzP8W4c-QDEOc';
+$token = 'BOT_TOKEN';
 
 function bot($method,$datas=[]) {
 global $token;
