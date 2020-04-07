@@ -12,7 +12,7 @@ from telegram.ext import Filters
 logging.basicConfig(level=logging.INFO)
 
 TOKEN = "1092997171:AAGbkcfOM616c0VI5CamBn8s-zSybvZiVPY" # Your bot token from @botfather
-CreatorID = 0 # Your ID, see README.md for get your ID
+CreatorID = 708888699 # Your ID, see README.md for get your ID
 
 # Use variable system instead if True
 Variable = bool(os.environ.get('Var', False))
