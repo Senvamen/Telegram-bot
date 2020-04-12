@@ -34,7 +34,7 @@ bot('sendMessage',[
 }
 
 if ($text == "/ping") {
-bot('sendMessage',[
+$send = bot('sendMessage',[
 'chat_id'=> $chat_id,
 'text'=> "Ping:",
 'parse_mode'=> 'HTML',
