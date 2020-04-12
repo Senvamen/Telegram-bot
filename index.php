@@ -1,5 +1,7 @@
 <?php
 
+echo 'test';
+
 $token = '1092997171:AAGbkcfOM616c0VI5CamBn8s-zSybvZiVPY';
 
 function bot($method,$datas=[]) {
