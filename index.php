@@ -45,7 +45,7 @@ $ping = $end_time - $start_time;
 bot('editMessageText',[
 'chat_id'=> $chat_id,
 'message_id'=> $send,
-'text'=> "Ping: $ping ms",
+'text'=> "Ping: " . $ping . " ms",
 'parse_mode'=> 'HTML',
 ]);
 }
