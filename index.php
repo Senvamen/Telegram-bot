@@ -1,6 +1,6 @@
 <?php
 
-$token = '1111802874:AAHadNlDhTa99n81I61QAHuxt7pInpJP-UE';
+$token = '1284299102:AAFcL60bPhkxiUwq8zk7O6pSHAVurZVWRmQ';
 
 function bot($method,$datas=[]) {
 global $token;
@@ -35,6 +35,11 @@ Bot to remove messages about user joined or left chatroom.
 
 Add it to your group for bot operation, then assign it as an administrator.",
 'parse_mode'=> 'markdown',
+'reply_markup'=> json_encode([
+'inline_keyboard'=> [
+[['text'=> "➕ Add to group ➕", 'url'=> "https://t.me/joinhider2_bot?startgroup=start"]]
+]
+])
 ]);
 }
 
