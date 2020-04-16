@@ -26,7 +26,7 @@ $user_id = $message->from->id;
 $message_id = $message->message_id;
 $name = $message->from->first_name;
 
-if ($text == "/start") {
+if ($text == "/start" or $text == "/start@Joinhider2_bot" or $text == "/start start") {
 bot('sendMessage',[
 'chat_id'=> $chat_id,
 'text'=> "*Join Hider 2 Bot*
