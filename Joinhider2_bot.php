@@ -29,7 +29,7 @@ $name = $message->from->first_name;
 if ($text == "/start" or $text == "/start@Joinhider2_bot" or $text == "/start@Joinhider2_bot start") {
 bot('sendMessage',[
 'chat_id'=> $chat_id,
-'text'=> "*Joinhider2_bot v 1.0*
+'text'=> "*Joinhider2_bot* version: `1.0`
 
 Bot to remove messages about user joined or left chatroom.
 
