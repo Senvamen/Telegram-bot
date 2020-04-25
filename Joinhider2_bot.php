@@ -29,7 +29,7 @@ $name = $message->from->first_name;
 if ($text == "/start" or $text == "/start@Joinhider2_bot" or $text == "/start@Joinhider2_bot start") {
 bot('sendMessage',[
 'chat_id'=> $chat_id,
-'text'=> "*Join Hider 2 Bot* version: `1.0`
+'text'=> "*Joinhider2_bot* version: `1.0`
 
 Bot to remove messages about user joined or left chatroom.
 
@@ -47,7 +47,7 @@ if ($text == "/ping") {
 $start_time = round(microtime(true) * 1000);
 $send=  bot('sendMessage', [
 'chat_id' => $chat_id,
-'text' =>"Ping:",
+'text' =>"Ping: *** ms",
 ])->result->message_id;
 $end_time = round(microtime(true) * 1000);
 $time_taken = $end_time - $start_time;
