@@ -26,7 +26,7 @@ $user_id = $message->from->id;
 $message_id = $message->message_id;
 $name = $message->from->first_name;
 
-if ($text == "/start" or $text == "/start@Joinhider2_bot" or $text == "/start@Joinhider2_bot start") {
+if (mb_stripos($text, "/start") !== false) {
 bot('sendMessage',[
 'chat_id'=> $chat_id,
 'text'=> "*Joinhider2_bot* version: `1.0`
