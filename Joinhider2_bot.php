@@ -47,7 +47,7 @@ if ($text == "/ping") {
 $start_time = round(microtime(true) * 1000);
 $send=  bot('sendMessage', [
 'chat_id' => $chat_id,
-'text' =>"Ping: Hisoblanmoqda...",
+'text' =>"Ping: *** ms",
 ])->result->message_id;
 $end_time = round(microtime(true) * 1000);
 $time_taken = $end_time - $start_time;
