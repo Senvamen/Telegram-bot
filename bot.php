@@ -2,7 +2,7 @@
 
 $token = '1111802874:AAEoK8Xqp1dP3DqjBEMIqVuPyGjFCcL43M4';
 
-function bot($method,$datas=[]) {
+function bot($method, $datas = []) {
 global $token;
 $url = "https://api.telegram.org/bot".$token."/".$method;
 $ch = curl_init();
@@ -26,7 +26,7 @@ $chat_id = $message->chat->id;
 if ($text == "/start" or $text == "/start@Joinhider2_bot" or $text == "/start@Joinhider2_bot start") {
 bot('sendMessage',[
 'chat_id'=> $chat_id,
-'text'=> "*Joinhider2_bot* version: `1.1.2`
+'text'=> "*Joinhider2_bot* version: `1.1.3`
 
 Bot to remove messages about user joined or left chatroom.
 
