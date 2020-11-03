@@ -1,6 +1,6 @@
 <?php
 
-$HTTP_API = 'bot_token';
+$HTTP_API = '1111802874:AAEoK8Xqp1dP3DqjBEMIqVuPyGjFCcL43M4';
 
 function bot($method, $datas = []) {
 global $HTTP_API;
@@ -26,11 +26,11 @@ $chat_id = $message->chat->id;
 if ($text == '/start' or $text == '/start@Joinhider2_bot' or $text == '/start@Joinhider2_bot start') {
 bot('sendMessage',[
 'chat_id' => $chat_id,
-'text' => "*Joinhider2_bot* version: `1.0.4`
+'text' => "*Joinhider2_bot* version: `1.0.5`
 
 Bot to remove messages about user joined or left chatroom.
 
-Add it to your group for bot operation, then assign it as an administrator.",
+Add to your group for bot operation, then assign as administrator.",
 'parse_mode' => 'markdown',
 'reply_markup' => json_encode([
 'inline_keyboard' => [
