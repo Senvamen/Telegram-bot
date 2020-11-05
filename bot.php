@@ -1,6 +1,6 @@
 <?php
 
-$HTTP_API = 'BOT_TOKEN';
+$HTTP_API = '1111802874:AAEoK8Xqp1dP3DqjBEMIqVuPyGjFCcL43M4';
 
 function bot($method, $datas = []) {
 global $HTTP_API;
