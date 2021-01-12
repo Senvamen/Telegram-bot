@@ -30,7 +30,9 @@ bot('sendMessage',[
 
 Bot to remove messages about user joined or left chatroom.
 
-Add to your group for bot operation, then assign as administrator.",
+Add to your group for bot operation, then assign as administrator.
+
+Support: @izzatbe",
 'parse_mode' => 'markdown',
 'reply_markup' => json_encode([
 'inline_keyboard' => [
