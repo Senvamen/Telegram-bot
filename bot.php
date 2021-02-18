@@ -30,7 +30,7 @@ bot('sendMessage',[
 ]);
 bot('sendMessage',[
 'chat_id' => $chat_id,
-'text' => "*Joinhider2_bot* version: `1.0.5`
+'text' => "*Joinhider2_bot* version: `2.0`
 
 Bot to remove messages about user joined or left chatroom. Add to your group for bot operation, then assign as administrator.",
 'parse_mode' => 'markdown',
