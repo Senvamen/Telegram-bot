@@ -26,13 +26,13 @@ $chat_id = $message->chat->id;
 if ($text == '/start' or $text == '/start@Joinhider2_bot' or $text == '/start@Joinhider2_bot start') {
 bot('sendMessage',[
 'chat_id' => $chat_id,
+'text' => "@Trimetra - Присоединяйтесь к нам сейчас и приглашайте друзей."
+]);
+bot('sendMessage',[
+'chat_id' => $chat_id,
 'text' => "*Joinhider2_bot* version: `1.0.5`
 
-Bot to remove messages about user joined or left chatroom.
-
-Add to your group for bot operation, then assign as administrator.
-
-Support: @izzatbe",
+Bot to remove messages about user joined or left chatroom. Add to your group for bot operation, then assign as administrator.",
 'parse_mode' => 'markdown',
 'reply_markup' => json_encode([
 'inline_keyboard' => [
