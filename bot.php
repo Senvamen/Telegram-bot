@@ -24,12 +24,6 @@ $message_id = $message->message_id;
 $chat_id = $message->chat->id;
 $type = $message->chat->type;
 
-$dbhost = "mysql-izzatbek.alwaysdata.net";
-$dbuser = "izzatbek";
-$dbpass = "@izzatbek00";
-$dbname = "izzatbek_db";
-$connect = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
-
 if ($text == '/start' or $text == '/start@Joinhider2_bot' or $text == '/start@Joinhider2_bot start') {
 bot('sendMessage',[
 'chat_id' => $chat_id,
@@ -43,13 +37,6 @@ Bot to remove messages about user joined or left chatroom. Add to your group for
 ]
 ])
 ]);
-if ($type == 'group' or $type == 'supergroup') {
-$chat = mysqli_fetch_assoc(mysqli_query($connect,"SELECT * FROM joinhider WHERE chat_id = '$chat_id' LIMIT 1"));
-if ($chat['chat_id'] != true){
-$connect->query("INSERT INTO joinhider (chat_id)
-VALUES ('$chat_id')");
-}
-}
 }
 
 if ($message->new_chat_member) {
@@ -62,16 +49,5 @@ if ($message->left_chat_member) {
 bot('deleteMessage',[
 'chat_id' => $chat_id,
 'message_id' => $message_id
-]);
-}
-
-if ($text == "/stat" and $chat_id == 708888699) {
-$chats = mysqli_num_rows(mysqli_query($connect,"SELECT chat_id FROM joinhider"));
-bot('sendmessage',[
-'chat_id'=> $chat_id,
-'text'=> "Bot statistikasi bilan tanishing:
-
-Foydalanuvchilar soni: <b>$chats</b>",
-'parse_mode'=> 'html'
 ]);
 }
