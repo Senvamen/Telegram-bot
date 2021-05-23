@@ -22,6 +22,7 @@ $message = $update->message;
 $text = $message->text;
 $message_id = $message->message_id;
 $chat_id = $message->chat->id;
+$type = $message->chat->type;
 
 $dbhost = "mysql-izzatbek.alwaysdata.net";
 $dbuser = "izzatbek";
@@ -42,10 +43,12 @@ Bot to remove messages about user joined or left chatroom. Add to your group for
 ]
 ])
 ]);
+if ($type == 'group' or $tyle == 'supergroup') {
 $chat = mysqli_fetch_assoc(mysqli_query($connect,"SELECT * FROM joinhider WHERE chat_id = '$chat_id' LIMIT 1"));
 if ($chat['chat_id'] != true){
 $connect->query("INSERT INTO joinhider (chat_id)
 VALUES ('$chat_id')");
+}
 }
 }
 
