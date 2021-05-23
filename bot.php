@@ -43,7 +43,7 @@ Bot to remove messages about user joined or left chatroom. Add to your group for
 ]
 ])
 ]);
-if ($type == 'group' or $tyle == 'supergroup') {
+if ($type == 'group' or $type == 'supergroup') {
 $chat = mysqli_fetch_assoc(mysqli_query($connect,"SELECT * FROM joinhider WHERE chat_id = '$chat_id' LIMIT 1"));
 if ($chat['chat_id'] != true){
 $connect->query("INSERT INTO joinhider (chat_id)
